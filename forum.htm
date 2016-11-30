@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0025)http://graph.2x2forum.ru/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" id="min-width" lang="ru" xml:lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Графики функций</title><meta http-equiv="content-script-type" content="text/javascript"><meta http-equiv="content-style-type" content="text/css"><meta name="language" content="ru"><meta name="description" content="На данном форуме вы можете обсудить вопросы, возникшие у вас по теме построение графиков функций."><meta name="keywords" content="" lang="ru"><meta name="robots" content="index, follow, noodp"><link rel="alternate" type="application/rss+xml" href="http://graph.2x2forum.ru/feed/?f=5" title="Функции с модулем">
+<link rel="alternate" type="application/rss+xml" href="http://graph.2x2forum.ru/feed/?f=4" title="Дробно-рациональная функция">
+<link rel="alternate" type="application/rss+xml" href="http://graph.2x2forum.ru/feed/?f=1" title="Квадратичная функция">
+<link rel="alternate" type="application/rss+xml" href="http://graph.2x2forum.ru/feed/?f=3" title="Линейная функция">
+<link rel="alternate" type="application/rss+xml" title="Последние темы (RSS 2.0)" href="http://graph.2x2forum.ru/feed/">
+<link rel="alternate" type="application/atom+xml" title="Последние темы (ATOM)" href="http://graph.2x2forum.ru/feed/?type=atom">
+<meta name="title" content="Графики функций"><link rel="stylesheet" href="./forum_files/4-ltr.css" type="text/css"><link rel="search" type="application/opensearchdescription+xml" href="http://graph.2x2forum.ru/improvedsearch.xml" title="Графики функций"><link rel="search" type="application/opensearchdescription+xml" href="http://www.profiforum.ru/ru/search/improvedsearch.xml" title="Найти форумы"><script type="text/javascript" async="" src="./forum_files/ga.js"></script><script src="./forum_files/jquery.min.js" type="text/javascript"></script><style type="text/css"></style><script src="./forum_files/ru.js" type="text/javascript"></script><script type="text/javascript">//<![CDATA[
+$(document).ready(function(){});//]]></script><style type="text/css">#page-footer, div.navbar, div.navbar ul.linklist {display: block !important;}ul.linklist li.rightside, ul.linklist li.rightside a.copyright {display: inline !important;}</style>
+<script type="text/javascript" src="./forum_files/jquery.cookie.js"></script>
+<script type="text/javascript" src="./forum_files/FAToolbar.js"></script>
+<script type="text/javascript" src="./forum_files/json2.js"></script>
+<script type="text/javascript" src="./forum_files/printf.js"></script>
+<script type="text/javascript" src="./forum_files/jquery.dotdotdot-1.5.6.js"></script>
+<script type="text/javascript" src="./forum_files/FA.js"></script><script type="text/javascript">
+//<![CDATA[
+
+                if(typeof(_userdata) == "undefined")
+					var _userdata = new Object();
+                _userdata["session_logged_in"] = 1;
+                _userdata["username"] = "Admin";
+                _userdata["user_id"] = 1;
+                _userdata["user_level"] = 1;
+                _userdata["user_lang"] = "ru";
+                _userdata["activate_toolbar"] = 1;
+                _userdata["fix_toolbar"] = 1;
+                _userdata["notifications"] = 1;
+                _userdata["avatar"] = "<img src=\"http://illiweb.com/fa/invision/pp-blank-thumb.png\" alt=\"\" />";
+                _userdata["user_posts"] = 1;
+                _userdata["user_nb_privmsg"] = 0;
+                _userdata["point_reputation"] = 0;
+            
+
+				if(typeof(_lang) == "undefined")
+					var _lang = new Object();
+                _lang["Share"] = "Делитесь";
+                _lang["Login"] = "Вход";
+                _lang["Register"] = "Регистрация";
+                _lang["Welcome"] = "Здравствуйте,";
+                _lang["Notifications"] = "Уведомления";
+                _lang["See_my_profile"] = "Мой профиль";
+                _lang["Edit_profile"] = "Настройки профиля";
+                _lang["All_Topics"] = "Мои темы";
+                _lang["All_Messages"] = "Мои сообщения";
+                _lang["js_topics_followed"] = "Подписка на темы";
+                _lang["Admin_panel"] = "Панель администратора";
+                _lang["Logout"] = "Выход";
+
+                _lang["Notif_see_all"] = "Посмотреть все уведомления";
+                _lang["Notif_priv_msg"] = "Вы получили <a href=\"/privmsg?folder=inbox&amp;nid=%(nid)s\">личное сообщение</a> от пользователя <a href=\"/u%(id)d\">%(name)s</a>";
+                _lang["Notif_report"] = "<a href=\"/u%(id)d\">%(name)s</a> отправил(а) <a href=\"/report?nid=%(nid)s\">сигнальный рапорт</a>";
+                _lang["Notif_friend_req"] = "Вы получили <a href=\"/profile?mode=editprofile&amp;nid=%(nid)s&amp;page_profil=friendsfoes\">заявку на добавление в друзья</a> от пользователя <a href=\"/u%(id)d\">%(name)s</a>";
+                _lang["Notif_group_req"] = "<a href=\"/u%(id)d\">%(name)s</a> подал(a) заявку на вступление в группу <a href=\"/g%(group_id)d-%(group_url_name)s?nid=%(nid)s\">%(group_name)s</a>";
+                _lang["Notif_friend_con"] = "<a href=\"/u%(id)d\">%(name)s</a> вошел (вошла) на форум";
+                _lang["Notif_wall_msg"] = "<a href=\"/u%(id)d\">%(name)s</a> написал(a) сообщение на <a href=\"/u%(self)dwall?nid=%(nid)s\">вашей стене</a>";
+                _lang["Notif_abuse"] = "На форум пришло сообщение о <a href=\"/admin/index.forum?mode=active&amp;nid&amp;part=misc&amp;sub=support&amp;tid=88a9f48557922962befb2a0f087f0333\">нарушении</a>";
+                _lang["Notif_topic_watch"] = "<a href=\"/u%(id)d\">%(name)s</a> написал(а) сообщение <a href=\"/t%(topic_id)d-%(topic_name)s?nid=%(nid)s#%(post_id)d\">в теме, за которой вы следите</a>";
+                _lang["Notif_topic_watch_p"] = "<a href=\"/u%(id)d\">%(name)s</a> написал(а) сообщение <a href=\"/t%(topic_id)dp%(start)d-%(topic_name)s?nid=%(nid)s#%(post_id)d\">в теме, за которой вы следите</a>";
+                _lang["Notif_topic_watch_guest"] = "Гость форума написал сообщение в <a href=\"/t%(topic_id)d-%(topic_name)s?nid=%(nid)s#%(post_id)d\">теме, за которой вы следите</a>";
+                _lang["Notif_topic_watch_p_guest"] = "Гость форума написал сообщение в <a href=\"/t%(topic_id)dp%(start)d-%(topic_name)s?nid=%(nid)s#%(post_id)d\">теме, за которой вы следите</a>";
+                _lang["All_PMs"] = "Мои ЛС";
+                _lang["rank_title"] = "Admin";
+                _lang["No_assigned_rank"] ="Специального звания не присвоено";
+                _lang["Posts"] = "Сообщения";
+                _lang["PMs"] = "ЛС";
+                _lang["Reputation"] ="Репутация";
+            
+
+                if(typeof(_board) == "undefined")
+					var _board = new Object();	
+                _board["reputation_active"] = 0;
+                _board["Forumotion"] = "Forum2x2";
+                _board["toolbar_title_url"] = "http://www.forum2x2.ru";
+                _board["toolbar_logo"] = "http://illiweb.com/fa/i/toolbar/pa0.png";
+            
+$(document).ready(Toolbar.init)
+$(function() {});
+//]]>
+</script>
+
+<style type="text/css">
+#left .dc2b {background-color: #ecf3f7;color: #536482;margin-bottom:4px;overflow: hidden;padding:0;}#left .dc2b span.corners-bottom, #left .dc2b span.corners-top {margin:0;}#main .dc2b {background-color: #ecf3f7;color: #536482;margin-bottom: 4px;overflow: hidden;padding: 0 10px;}#main .dc2b span.corners-bottom, #main .dc2b span.corners-top {margin:0 -10px;}#main .dc2b .main-content iframe{display: block important!;visibility: visible important!}div#main-content iframe[src*=adstune]:not([style*=display]), div#main-content iframe[src*=criteo]:not([style*=display]), div#main-content iframe[src*=ad6b]:not([style*=display]), div#main-content iframe[src*=z5x]:not([style*=display]), div#main-content iframe[src*=doubleclick]:not([style*=display]) {display: block !important;visibility: visible !important;}
+.fa_toolbar_XL_Sized { min-width: 980px; width: 100%; }
+                    .fa_toolbar_L_Sized { min-width: 774px; }
+                    .fa_toolbar_M_Sized { min-width: 519px; }
+                    #fa_toolbar { left: 0px; height: 30px; background-color: #333333; color: #FFFFFF; font-family: Helvetica, Verdana, Arial; font-size: 16px; z-index: 20002; }
+#fa_toolbar :link, #fa_toolbar :visited { color: #FFFFFF; text-decoration: none; }
+#fa_toolbar a:hover { text-decoration: underline; }
+#fa_toolbar a:link, #fa_toolbar a:visited, #fa_toolbar a:hover, #fa_toolbar a:active { border:1px solid transparent; border:none; }
+.fa_tbMainElement, .fa_tbMainElement a, #fa_show { display: inline-block !important; vertical-align: middle; }
+#fa_toolbar #fa_icon { display: inline-block !important; visibility: visible !important; background-repeat: no-repeat; background-image: url('http://illiweb.com/fa/i/toolbar/pa0.png'); background-size: 30px; width: 30px; height: 30px; }
+#fa_toolbar #fa_magnifier, #fa_toolbar #fa_fb, #fa_toolbar #fa_twitter, #fa_toolbar #fa_gp, #fa_toolbar #fa_mail, #fa_toolbar #fa_rss, #fa_toolbar #fa_hide, #fa_toolbar_hidden #fa_show { background-image: url('http://www.illiweb.com/fa/i/toolbar/toolbar.png'); width: 30px; height: 30px; cursor: pointer; }
+#fa_left { display: inline-block !important; visibility: visible !important; width: auto !important; height: auto !important; line-height: 30px !important; }
+#fa_icon, #fa_toolbar #fa_service { color: #FFFFFF; }
+#fa_toolbar #fa_service { display: inline-block !important; visibility: visible !important; text-decoration: none !important; }
+#fa_toolbar #fa_service:hover[href] { text-decoration: underline !important; }
+#fa_search { margin-left: 20px; height: 30px; }
+#fa_search form { margin: 0; padding:0; display:inline; }
+#fa_search #fa_magnifier { position : absolute; background-position: -30px 0px; }
+#fa_search #fa_textarea { text-indent: 30px !important; width: 200px; height: 24px; padding: 0px; border: 0px; margin-top: 3px; border-radius: 5px; line-height: 24px; }
+#fa_share { margin-left: 20px; font-size: 16px; line-height: 30px !important; }
+#fa_share_text { cursor: default; color: #FFFFFF; text-decoration: none !important; }
+#fa_fb { margin-left: 10px; background-position: -60px 0px; }
+#fa_twitter { background-position: -90px 0px; }
+#fa_gp { background-position: -120px 0px; }
+#fa_mail { background-position: -150px 0px; }
+#fa_rss { background-position: -180px 0px; }
+#fa_right { float: right; font-size: 14px; }
+#fa_right a.rightHeaderLink { margin-left: 10px; vertical-align: top; line-height: 30px; color:#FFFFFF }
+#fa_right span.rightHeaderLink { display:inline-block; margin-left: 1px; vertical-align: top; line-height: 30px; color:#FFFFFF }
+#fa_welcome, #fa_right #fa_notifications { line-height: 30px; padding: 0px 5px; color: #FFFFFF; }
+#fa_hide { background-position: -210px 0px; }
+#fa_menu { display: inline-block; }
+#fa_right #fa_welcome:hover, #fa_toolbar #fa_right #fa_notifications:hover { cursor: pointer; }
+#fa_right #fa_menu #fa_welcome, #fa_right.notification #fa_menu #fa_welcome { color: #FFFFFF; }
+#fa_right #fa_menu ul, #fa_right.notification #fa_menu ul { display: none; }
+#fa_right.welcome #fa_menu #fa_welcome { color: #333; background-color: #fff; }
+#fa_right.welcome #fa_menu ul { display: block; }
+#fa_menu:hover :visited, #fa_toolbar > #fa_right.notification > #fa_notifications { color: #333333; background-color: #FFFFFF; }
+#fa_toolbar #fa_right .fa_separator { width: 90%; height: 1px; margin: 0; padding: 0px; background-color: #CCCCCC; text-align: center; }
+#fa_menulist { display: none; position: absolute; list-style-type: none; margin: 0px; padding: 0px 10px; background-color: #FFFFFF; min-width: 175px; width: auto; border: 1px solid #333333; line-height: 32px; border-top: 0px solid #FFFFFF; z-index: 10000; }
+#fa_menulist :link, #fa_menulist :visited { color: #00569C !important; }
+#fa_toolbar_hidden { position: absolute; width: 30px; height: 30px; right: 0px; margin-top: -60px; background-color: #333333; border-radius: 0px 0px 5px 5px; z-index: 20002; }
+#fa_show { background-position: -240px 0px; }
+
+#fa_toolbar #fa_right #fa_notifications #notif_unread { display: none; margin-left: 0.5em; }
+#fa_toolbar #fa_right #fa_notifications.unread #notif_unread { display: inline; }
+#fa_toolbar #fa_right #notif_list { font-size: 11px; display: none; position: absolute; list-style-type: none; margin: 0; padding: 0; background-color: #FFFFFF; border: 1px solid #333333; border-top: 0px solid #FFFFFF; z-index: 10000; }
+#fa_toolbar #fa_right.notification #notif_list { display: block;; }
+#fa_toolbar #fa_right #notif_list li { margin: 0; font-size: 1em; padding: 0 0.5em 0.5em; color: #333; line-height: 1.2em; display:block; }
+#fa_toolbar #fa_right #notif_list li .contentText { float:left; width:27em; height: 2.4em; overflow: hidden; }
+#fa_toolbar #fa_right #notif_list li .contentText a { color: #00569C !important; text-decoration: underline !important; vertical-align: baseline; /*max-width: 150px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; */}
+#fa_toolbar #fa_right #notif_list li:first-child { padding-top: 0.5em; }
+#fa_toolbar #fa_right #notif_list li:first-child hr { display: none; }
+#fa_toolbar #fa_right #notif_list li .content { width: 30em; /*height: 2.4em;*/ margin: 0; display: block; overflow: hidden; vertical-align: top; color: inherit !important; line-height: inherit !important; }
+#fa_toolbar #fa_right #notif_list li a.delete { width: 22px; height: 2.4em; background: transparent url('http://www.illiweb.com/fa/i/toolbar/toolbar.png') no-repeat -274px 50%; float:right; }
+#fa_toolbar #fa_right #notif_list li hr { margin: 0 0 0.5em 0; border: 0 solid #ccc; border-top-width: 1px; }
+#fa_toolbar #fa_right #notif_list li.unread { font-weight: bold; background-color: #e5e5e5; }
+#fa_toolbar #fa_right #notif_list li.see_all { color: #fff; background-color: #333; padding: 0.7em !important; text-align: right; }
+#fa_toolbar #fa_right #notif_list li.see_all a { color: #fff; width:100%; }
+
+#fa_toolbar #live_notif { width: 330px; position: absolute; }
+#fa_toolbar #live_notif .fa_notification { background-color: #333; opacity: 0.8; border-radius: 5px; padding: 10px; }
+#fa_toolbar #live_notif .fa_notification .content { padding-left: 40px; display: inline-block; background-image: url('http://www.illiweb.com/fa/notifications/notifications.png'); background-repeat: no-repeat; height: 32px; font-size : 11px; color : #fff; overflow : hidden }
+#fa_toolbar #live_notif .fa_notification a { text-decoration: underline !important; vertical-align: baseline; /*max-width: 150px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; */}
+
+.fa_fix { position:fixed !important;position: absolute; /*ie6 and above*/top: 0;right: 0; }
+#fa_toolbar .fa_hide { display: none !important; }
+#fa_usermenu { position: absolute; left: 0px; width: 120px;  padding: 10px 20px 10px 10px; color: #333333; font-size: 12px; text-align: center; }
+                    #fa_ranktitle { width: 120px; text-align: center; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+                    #fa_ranktitle:hover { text-decoration: none !important; color: #333333; }
+                    #fa_usermenu td { padding: 0px; margin-bottom: 5px; line-height: 15px; }
+                    #fa_usermenu td.first { text-align: right; }
+                    #fa_usermenu td.bold { font-weight:bold; text-align: left; }
+                    #fa_usermenu img { max-width: 120px; max-height: 120px; }
+                    #fa_menulist { padding-left: 150px; }
+body { margin: 0; padding: 0 !important; }
+</style>
+<!--[if lte IE 6]>
+<style type="text/css">
+/* http://msdn.microsoft.com/en-us/library/ms537634.aspx#Implement */
+                    .fa_toolbar_XL_Sized { width: expression(document.documentElement.clientWidth ? (document.documentElement.clientWidth < 980 ? "980px": "100%") : (document.body.clientWidth < 980 ? "980px": "100%")); }
+                    .fa_toolbar_L_Sized { width: expression(document.documentElement.clientWidth ? (document.documentElement.clientWidth < 774 ? "774px": "auto") : (document.body.clientWidth < 774 ? "774px": "auto")); }
+                    .fa_toolbar_M_Sized { width: expression(document.documentElement.clientWidth ? (document.documentElement.clientWidth < 519 ? "519px": "auto") : (document.body.clientWidth < 519 ? "519px": "auto")); }
+                    #fa_toolbar #fa_magnifier, #fa_toolbar #fa_fb, #fa_toolbar #fa_twitter, #fa_toolbar #fa_gp, #fa_toolbar #fa_mail, #fa_toolbar #fa_rss, #fa_toolbar #fa_hide, #fa_toolbar_hidden #fa_show { background-image: url('http://www.illiweb.com/fa/i/toolbar/toolbar.gif'); width: 30px; height: 30px; cursor: pointer; }
+span.fa_tbMainElement, span.fa_tbMainElement a, #fa_show { zoom: 1; display: inline-block !important; line-height:30px; height: 30px; }
+div.fa_tbMainElement, div.fa_tbMainElement a { zoom: 1; display: inline !important; line-height:30px; height: 30px; }
+#fa_search #fa_textarea { margin-top: 1px; }
+#fa_show { z-index:20002; }
+#fa_menu { display: inline !important; height:30px; line-height:30px; }
+#fa_menulist { width:175px; margin-top:30px; }
+#fa_menulist li.fa_separator { font-size:1px; }
+#fa_menu:hover :visited, #fa_right.notification #fa_notifications { color: #333333; background-color: #FFFFFF; }
+#notif_list { margin-top:30px !important; }
+.fa_fix { position:absolute !important; top: expression(0+((e=document.documentElement.scrollTop)?e:document.body.scrollTop)+"px") !important; z-index:10002; }
+#fa_toolbar #live_notif { width: 330px; position: absolute; margin-top:30px; }
+#fa_toolbar #fa_right #notif_list li { width:32em; }
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+.fa_tbMainElement, .fa_tbMainElement a, #fa_toolbar_hidden > #fa_show { zoom: 1; display: inline !important; }
+                    #fa_search #fa_textarea { margin-top: 1px; }
+                    #fa_right > div { zoom: 1; display: inline !important; }
+                    #fa_menulist { width:175px !important; margin-top: 30px !important; margin-left: 1px !important; }
+                    #fa_menulist li a { white-space: nowrap; }
+                    #fa_menulist li.fa_separator { font-size: 1px; line-height: 1px; }
+                    #fa_toolbar #fa_right #notif_list { margin-top: 30px !important; }
+                    #fa_toolbar #live_notif { width: 330px; position: absolute; margin-top:30px; }
+                    #fa_toolbar #fa_right #notif_list li { width:30em; }
+                    #fa_toolbar #fa_right #notif_list li .contentText { height: 2.6em; }
+</style>
+<![endif]-->
+<script type="text/javascript">//<![CDATA[
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-6105650-12"]);_gaq.push(["_trackPageview"]);_gaq.push(['_trackPageLoadTime']);(function() {var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);})();//]]></script></head><body id="phpbb" style="margin-top: 30px;"><div id="fa_toolbar" class="fa_fix fa_toolbar_XL_Sized"><div id="fa_right" class="fa_tbMainElement"><div id="fa_menu"><a id="fa_welcome">Здравствуйте, Admin</a><ul id="fa_menulist" style="left: 779px;"><div id="fa_usermenu"><img src="./forum_files/pp-blank-thumb.png" alt=""><a id="fa_ranktitle" title="Admin">Admin</a><table><tbody><tr><td class="first">Сообщения</td><td> : </td><td class="bold">1</td></tr><tr><td class="first">ЛС</td><td> : </td><td class="bold">0</td></tr></tbody></table></div><li><a href="http://graph.2x2forum.ru/u1">Мой профиль</a></li><li><a href="http://graph.2x2forum.ru/profile?mode=editprofile&page_profil=preferences">Настройки профиля</a></li><li class="fa_separator"></li><li><a href="http://graph.2x2forum.ru/sta/Admin">Мои темы</a></li><li><a href="http://graph.2x2forum.ru/spa/Admin">Мои сообщения</a></li><li><a href="http://graph.2x2forum.ru/search?search_id=watchsearch">Подписка на темы</a></li><li><a href="http://graph.2x2forum.ru/privmsg?folder=inbox">Мои ЛС</a></li><li class="fa_separator"></li><li><a href="http://graph.2x2forum.ru/admin">Панель администратора</a></li><li><a href="http://graph.2x2forum.ru/login?logout=1">Выход</a></li></ul></div><a id="fa_notifications" class="rightHeaderLink">Уведомления<span id="notif_unread"></span></a><ul id="notif_list" style="left: 1052px;"><li class="see_all"><a href="http://graph.2x2forum.ru/profile?mode=editprofile&page_profil=notifications">Посмотреть все уведомления</a></li></ul><div id="live_notif" style="width: 330px; position: absolute; right: 39px;"></div><a id="fa_hide" class="rightHeaderLink"></a></div><span id="fa_left" class="fa_tbMainElement"><a id="fa_icon" href="http://www.forum2x2.ru/" target="_blank"></a><a id="fa_service" href="http://www.forum2x2.ru/" target="_blank">Forum2x2</a></span><div id="fa_search" class="fa_tbMainElement"><form method="get" action="http://graph.2x2forum.ru/search"><a id="fa_magnifier"></a><input id="fa_textarea" type="text" name="search_keywords"></form></div><span id="fa_share" class="fa_tbMainElement"><span id="fa_share_text">Делитесь : </span><a id="fa_fb"></a><a id="fa_twitter"></a><a id="fa_gp"></a><a id="fa_mail" href="mailto:?body=http://graph.2x2forum.ru/" target="_blank"></a><a id="fa_rss" href="http://graph.2x2forum.ru/rss" target="_blank"></a></span></div><div id="fa_toolbar_hidden" class="fa_fix"><a id="fa_show"></a></div><div class="conteneur_minwidth_IE"><div class="conteneur_layout_IE"><div class="conteneur_container_IE"><div id="wrap"><a id="top" name="top" accesskey="t"></a><div id="page-header"><div class="headerbar"><div class="inner"><span class="corners-top"><span></span></span><div id="logo-desc"><a href="./forum_files/forum.htm" id="logo"><img src="./forum_files/site_logo.gif" alt="Графики функций"></a><div id="site-title"><h1>Графики функций</h1></div><p>На данном форуме вы можете обсудить вопросы, возникшие у вас по теме построение графиков функций.</p></div><span class="corners-bottom"><span></span></span></div></div><div class="navbar"><div class="inner"><span class="corners-top"><span></span></span><ul class="linklist navlinks"><li><a class="mainmenu" href="./forum_files/forum.htm"><img id="i_icon_mini_index" class="sprite-icon_home" src="./forum_files/empty.gif" border="0" hspace="2" alt="Форум" title="Форум">Форум</a> &nbsp;</li><li><a class="mainmenu" href="http://graph.2x2forum.ru/calendar"><img id="i_icon_mini_calendar" class="sprite-icon_calendar" src="./forum_files/empty.gif" border="0" hspace="2" alt="Календарь" title="Календарь">Календарь</a> &nbsp;</li><li><a class="mainmenu" href="http://graph.2x2forum.ru/faq"><img id="i_icon_mini_faq" class="sprite-icon_faq" src="./forum_files/empty.gif" border="0" hspace="2" alt="ЧаВо" title="ЧаВо">ЧаВо</a> &nbsp;</li><li><a class="mainmenu" href="http://graph.2x2forum.ru/search" onclick="showhide(document.getElementById(&#39;search_menu&#39;)); return false;"><img id="i_icon_mini_search" class="sprite-icon_search" src="./forum_files/empty.gif" border="0" hspace="2" alt="Поиск" title="Поиск">Поиск</a> &nbsp;<script type="text/javascript">//<![CDATA[
+var url_search = '/search';
+insert_search_menu_new();//]]>
+</script><div class="overview row3" id="search_menu" style="display:none;position:absolute;width:350px;z-index:10000"><form action="http://graph.2x2forum.ru/search" method="get"><input type="hidden" name="mode" value="searchbox"><p class="title-overview row2">Запрос</p><p class="center-overview"><input type="text" class="inputbox medium" name="search_keywords"><input type="submit" class="button1" value="Go"><br>Результаты : <label for="rposts"><input id="rposts" type="radio" name="show_results" value="posts"> Сообщения</label> <label for="rtopics"><input id="rtopics" type="radio" name="show_results" value="topics" checked="checked"> Темы</label></p><hr class="dashed"><p class="center-overview"><a href="http://graph.2x2forum.ru/search" rel="nofollow" title="Расширенный поиск"><img src="./forum_files/empty.gif" width="12" height="13" alt="Расширенный поиск"> Расширенный поиск</a></p></form></div></li><li><a class="mainmenu" href="http://graph.2x2forum.ru/memberlist"><img id="i_icon_mini_members" class="sprite-icon_members" src="./forum_files/empty.gif" border="0" hspace="2" alt="Пользователи" title="Пользователи">Пользователи</a> &nbsp;</li><li><a class="mainmenu" href="http://graph.2x2forum.ru/groups"><img id="i_icon_mini_groups" class="sprite-icon_groups" src="./forum_files/empty.gif" border="0" hspace="2" alt="Группы" title="Группы">Группы</a> &nbsp;</li><li><a class="mainmenu" href="http://graph.2x2forum.ru/profile?mode=editprofile"><img id="i_icon_mini_profile" class="sprite-icon_ucp" src="./forum_files/empty.gif" border="0" hspace="2" alt="Профиль" title="Профиль">Профиль</a> &nbsp;</li><li><a class="mainmenu" href="http://graph.2x2forum.ru/privmsg?folder=inbox" rel="nofollow"><img id="i_icon_mini_message" class="sprite-icon_message" src="./forum_files/empty.gif" border="0" hspace="2" alt="Сообщения ЛС" title="Сообщения ЛС">Сообщения ЛС</a> &nbsp;</li><li><a class="mainmenu" href="http://graph.2x2forum.ru/login?logout=1&tid=88a9f48557922962befb2a0f087f0333&key=ec7758" rel="nofollow" id="logout"><img id="i_icon_mini_logout" class="sprite-icon_logout" src="./forum_files/empty.gif" border="0" hspace="2" alt="Выход [ Admin ]" title="Выход [ Admin ]">Выход [ Admin ]</a> &nbsp;</li></ul><div id="search-box"><form method="get" action="http://graph.2x2forum.ru/search?search_where=11" id="search"><p class="nomargin"><input type="text" name="search_keywords" id="keywords" maxlength="128" class="inputbox search" value="Поиск..." onclick="if (this.value == &#39;Поиск...&#39;) this.value = &#39;&#39;;" onblur="if (this.value == &#39;&#39;) this.value = &#39;Поиск...&#39;;"><input class="button2" type="submit" value="Поиск"></p></form></div><span class="corners-bottom"><span></span></span></div></div></div><div id="page-body"><div id="emptyidcc" class="no-left"><div id="outer-wrapper"><div id="wrapper"><div id="container"><div id="content"><div id="emptyidleft"></div><div id="main"><div id="main-content"><p class="right rightside">Вы последний раз заходили Вс 23 Мар 2014 - 17:04</p><p>Текущее время Вс 23 Мар 2014 - 17:24</p><br class="clear"><ul class="linklist"><li><a href="http://graph.2x2forum.ru/search?search_id=newposts">Найти сообщения с вашего последнего посещения</a>&nbsp;•&nbsp;</li><li><a href="http://graph.2x2forum.ru/search?search_id=egosearch">Найти ваши сообщения</a>&nbsp;•&nbsp;</li><li><a href="http://graph.2x2forum.ru/search?search_id=unanswered">Найти сообщения без ответов</a></li><li class="rightside"><a href="http://graph.2x2forum.ru/?mark=forums" accesskey="m">Отметить все форумы как прочтенные</a></li></ul><div class="forabg"><div class="inner"><span class="corners-top"><span></span></span><ul class="topiclist"><li class="header"><dl class="icon"><dd class="dterm"><div class="table-title">Форум</div></dd><dd class="topics">Темы</dd><dd class="posts">Сообщения</dd><dd class="lastpost"><span>Последние сообщения</span></dd></dl></li></ul><ul class="topiclist forums"><li class="row"><dl class="icon" style="background:url(http://illiweb.com/fa/prosilver/forum_read.gif) no-repeat scroll 10px 50%;"><dd class="dterm"><div style="display: block; margin : 0 0px 0 45px;"><h3 class="hierarchy"><a href="http://graph.2x2forum.ru/f5-forum" class="forumtitle">Функции с модулем</a></h3><br><p><br>
+</p><br><strong></strong> </div></dd><dd class="topics">0 <dfn>Темы</dfn></dd><dd class="posts">0 <dfn>Сообщения</dfn></dd><dd class="lastpost"><span><a href="" title=""></a><br></span></dd></dl></li><li class="row"><dl class="icon" style="background:url(http://illiweb.com/fa/prosilver/forum_read.gif) no-repeat scroll 10px 50%;"><dd class="dterm"><div style="display: block; margin : 0 0px 0 45px;"><h3 class="hierarchy"><a href="http://graph.2x2forum.ru/f4-forum" class="forumtitle">Дробно-рациональная функция</a></h3><br><p><br>
+</p><br><strong></strong> </div></dd><dd class="topics">0 <dfn>Темы</dfn></dd><dd class="posts">0 <dfn>Сообщения</dfn></dd><dd class="lastpost"><span><a href="" title=""></a><br></span></dd></dl></li><li class="row"><dl class="icon" style="background:url(http://illiweb.com/fa/prosilver/forum_read.gif) no-repeat scroll 10px 50%;"><dd class="dterm"><div style="display: block; margin : 0 0px 0 45px;"><h3 class="hierarchy"><a href="http://graph.2x2forum.ru/f1-forum" class="forumtitle">Квадратичная функция</a></h3><br><p><br>
+</p><br><strong></strong> </div></dd><dd class="topics">0 <dfn>Темы</dfn></dd><dd class="posts">0 <dfn>Сообщения</dfn></dd><dd class="lastpost"><span><a href="" title=""></a><br></span></dd></dl></li><li class="row"><dl class="icon" style="background:url(http://illiweb.com/fa/prosilver/forum_read.gif) no-repeat scroll 10px 50%;"><dd class="dterm"><div style="display: block; margin : 0 0px 0 45px;"><h3 class="hierarchy"><a href="http://graph.2x2forum.ru/f3-forum" class="forumtitle">Линейная функция</a></h3><br><p><br>
+</p><br><strong></strong> </div></dd><dd class="topics">0 <dfn>Темы</dfn></dd><dd class="posts">0 <dfn>Сообщения</dfn></dd><dd class="lastpost"><span><a href="" title=""></a><br></span></dd></dl></li><li class="row"><dl class="icon" style="background:url(http://illiweb.com/fa/prosilver/forum_read.gif) no-repeat scroll 10px 50%;"><dd class="dterm"><div style="display: block; margin : 0 0px 0 45px;"><h2 class="hierarchy"><a href="http://graph.2x2forum.ru/f2-forum" class="forumtitle">Корзина</a></h2><br>Корзина форума<br><strong></strong> </div></dd><dd class="topics">0 <dfn>Темы</dfn></dd><dd class="posts">0 <dfn>Сообщения</dfn></dd><dd class="lastpost"><span><a href="" title=""></a><br></span></dd></dl></li></ul><span class="corners-bottom"><span></span></span></div></div><ul class="linklist"><li><a href="http://graph.2x2forum.ru/search?search_id=activetopics">Активные темы дня</a>&nbsp;•&nbsp;</li><li><a href="http://graph.2x2forum.ru/memberlist?mode=today_posters">Самые активные за сегодняшний день</a>&nbsp;•&nbsp;</li><li class="last"><a href="http://graph.2x2forum.ru/memberlist?mode=overall_posters">Самые активные пользователи форума</a></li><li class="rightside"><a href="http://graph.2x2forum.ru/?mode=delete_cookies">Удалить cookies форума</a></li></ul><div class="h3"><a href="http://graph.2x2forum.ru/viewonline" rel="nofollow">Кто сейчас на форуме</a></div><img src="./forum_files/empty.gif" id="i_whosonline" alt="Кто сейчас на форуме" class="img-whois"><p>Сейчас посетителей на форуме: <strong>1</strong>, из них зарегистрированных: 1, скрытых: 0 и гостей: 0 <br>Больше всего посетителей (<strong>1</strong>) здесь было Вс 23 Мар 2014 - 17:04<br><br>Зарегистрированные пользователи: <a href="http://graph.2x2forum.ru/u1"><span style="color:#000099"><strong>Admin</strong></span></a><br><br><br style="line-height:5px;">Сегодня дней рождения нет<br>Дней рождений в ближайшие 7 дней нет<br><br><em>Легенда условных обозначений&nbsp;:&nbsp; [ <b><a style="color: #000099" class="gensmall" href="http://graph.2x2forum.ru/g2-group">Модераторы</a></b> ]</em></p><div class="clear"></div><div class="h3"><a href="http://graph.2x2forum.ru/statistics" rel="nofollow">Статистика</a></div><p class="page-bottom">Наши пользователи оставили сообщений: <strong>1</strong></p><p class="page-bottom">Всего зарегистрированных пользователей: <strong>1</strong></p><p class="page-bottom">Последний зарегистрированный пользователь: <strong><a href="http://graph.2x2forum.ru/u1"><span style="color:#000099"><strong>Admin</strong></span></a></strong></p><br style="clear:both"><ul id="picture_legend"><li><img src="./forum_files/forum_unread.gif" alt="Новые сообщения">Новые сообщения</li><li><img src="./forum_files/forum_read.gif" alt="Нет новых сообщений">Нет новых сообщений</li><li><img src="./forum_files/forum_read_locked.gif" alt="Форум закрыт">Форум закрыт</li></ul></div></div></div></div><div id="emptyidright"></div></div></div></div></div><div id="page-footer"><div class="navbar"><div class="inner"><span class="corners-top"><span></span></span><ul class="linklist clearfix"><li class="footer-home"><a class="icon-home" href="./forum_files/forum.htm" accesskey="h">Форум</a></li><li class="rightside"><strong><a href="http://www.forum2x2.ru/" target="_blank">Создать форум</a></strong>&nbsp;|&nbsp;<span class="gensmall">©</span> <a href="http://www.forum2x2.ru/ru/phpbb/" target="_blank">phpBB</a>&nbsp;|&nbsp;<a name="bottom" href="http://help.forum2x2.ru/" target="_blank">Бесплатный форум поддержки</a>&nbsp;|&nbsp;<a name="bottom" href="http://graph.2x2forum.ru/statistics" rel="nofollow">Статистика</a>&nbsp;|&nbsp;<a name="bottom" href="http://graph.2x2forum.ru/contact" rel="nofollow">Контакты</a>&nbsp;|&nbsp;<a href="http://graph.2x2forum.ru/abuse?page=%2F&report=1" rel="nofollow">Сообщить о нарушении</a></li></ul><span class="corners-bottom"><span></span></span></div></div><p class="copyright"><strong><a href="http://graph.2x2forum.ru/admin/index.forum?part=admin&tid=88a9f48557922962befb2a0f087f0333">Панель администратора</a><br><br></strong></p></div></div></div></div></div><script type="text/javascript">//<![CDATA[
+fa_endpage();//]]></script></body></html>

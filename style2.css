@@ -1,0 +1,402 @@
+html {
+min-width:100%;
+overflow:scroll;
+}
+body {
+    /*margin-left: 7%; margin-right: 7%;*/line-height: 180%;  
+}
+
+.col1 { background: #C7E3E4; width: 7%; }
+.col2 {width: 87%; }
+.col3 { background: #ECD5DE; width: 7%; }
+
+a.a {
+    color: #A52A2A; /* Цвет обычной ссылки */ 
+
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+   }
+   a.a:visited {
+    color: #A52A2A; /* Цвет посещённой ссылки */
+
+   } 
+   a.a:hover {
+    color: #000000; /* Цвет ссылки при наведении на нее курсора мыши */  
+    text-decoration: none; /* Добавляем подчеркивание */
+text-shadow: 0 0 50px black; 
+   }
+
+a.a1 {
+    color: #BEBEBE; /* Цвет обычной ссылки */ 
+
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+   }
+   a.a1:visited {
+    color: #BEBEBE; /* Цвет посещённой ссылки */
+
+   } 
+   a.a1:hover {
+    color: #D3D3D3; /* Цвет ссылки при наведении на нее курсора мыши */  
+    text-decoration: none; /* Добавляем подчеркивание */
+text-shadow: 0 0 10px red;
+   }
+
+.Box {
+    margin-bottom:60px;
+        width: 155px;
+        height: 200px;
+        background-color: #ffffff;
+        position:relative;
+        border: 2px solid #D4D4D4;
+        border-radius: 2px;
+        box-shadow: 0 0 15px #A9A9A9;
+        padding:20px 40px;
+}
+
+
+.text {
+ font-family: Brushstroke, fantasy;
+color: #000000;
+        text-decoration: none;
+}
+
+.Box:hover {
+ margin-bottom:15px;
+        width:155px;
+        height: 200px;
+        background-color: #ffffff;
+        position:relative;
+        border: 2px solid #D4D4D4;
+        border-radius: 2px;
+        box-shadow: 0 0 45px #A9A9A9;
+        padding:20px 40px;
+        text-decoration: none;
+}
+
+.Box:active {
+ margin-bottom:15px;
+        width:155px;
+        height: 200px;
+        background-color: #ffffff;
+        position:relative;
+        border: 2px solid #D4D4D4;
+        border-radius: 2px;
+        box-shadow: 0 0 45px #A9A9A9;
+        padding:20px 40px;
+        text-decoration: none;
+}
+
+ .effect-2 {
+ transition: border-radius 0.50s;
+ -webkit-transition: border-radius 0.50s;
+ -moz-transition: border-radius 0.50s;
+ -o-transition: border-radius 0.50s;
+ -ms-transition: border-radius 0.50s;
+}
+
+.Boxstr {
+        width: 90%;
+        height: 100%;
+        background-color: #ffffff;
+        position:right;
+        border: 2px solid #D4D4D4;
+        border-radius: 2px;
+        box-shadow: 0 0 15px #A9A9A9;
+        padding:20px 40px;
+}
+
+
+.text {
+ font-family: Century Gothic;
+color: #000000;
+        text-decoration: none;
+}
+
+.line-1 { 
+  width:100%;  
+  border-top: 1px solid #BEBEBE; 
+  border-bottom: 1px solid #fff; 
+  height: 0px; 
+}
+
+              /* описание контейнера */
+
+.left-controlbar {
+width:10%;
+position: absolute;
+   right: 0px;
+background: #FFFF00;
+}
+ 
+
+.leftbar-wrap {
+  position: fixed;
+  width:8%;
+  right: 0%;
+  top:90%;
+ }
+ 
+/* описание кнопки «Вверх» */
+.left-controlbar {
+  
+  height:100%;
+  display: block;
+  text-decoration: none;
+}
+ 
+/* описание кнопки «Вернуться» */
+#scroll-back {
+  display: block;
+  height: 100%;
+  display: none;
+  text-align: center;
+
+}
+ 
+/* описание столбца фонового цвета для обеих кнопок */
+.active-area {
+  
+  width: 170%;
+  height: 100%;
+  text-align: center;
+}
+ 
+/* 
+.leftbar-wrap:hover .active-area {
+  background: rgba(99, 156, 191, 0.2);
+}
+ 
+
+.leftbar-wrap .active-area:hover {
+  background: rgba(99, 156, 191, 0.1);
+}*/
+ 
+/* центрируем надпись у кнопок */
+.bar-desc {
+  margin-top: 850%;
+  position: inherit;
+  display: inline-block;
+}
+
+
+.block{
+ display:inline-block;
+ float:left;
+ vertical-align:middle;
+}
+
+
+.cf:before, .cf:after{
+    content:"";
+    display:table;
+}
+ 
+.cf:after{
+    clear:both;
+}
+
+
+ 
+.cf{
+    zoom:1;
+}  
+
+/* Form wrapper styling */
+.form-wrapper {
+    width: 220px;
+    
+}
+ 
+/* Form text input */
+
+.form-wrapper input {
+    width: 150px;
+    height: 1px;
+    padding: 10px 5px;
+    float: left;    
+    font: bold 13px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    border: 0;
+    background: #eee;
+    border-radius: 3px 0 0 3px;      
+}
+
+
+.form-wrapper input:focus {
+    outline: 0;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+ 
+.form-wrapper input::-webkit-input-placeholder {
+   color: #999;
+   font-weight: normal;
+   font-style: italic;
+}
+ 
+.form-wrapper input:-moz-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+ 
+.form-wrapper input:-ms-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}    
+ 
+
+.form-wrapper button {
+    overflow: visible;
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 21px;
+    width: 60px;
+    font: bold 10px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    color: #fff;
+    text-transform: uppercase;
+    background: #d83c3c;
+    border-radius: 0 3px 3px 0;      
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+}   
+
+.form-wrapper button:hover{     
+    background: #e54040;
+}   
+   
+.form-wrapper button:active,
+.form-wrapper button:focus{   
+    background: #c42f2f;
+    outline: 0;   
+}
+ 
+.form-wrapper button:before { /* left arrow */
+    content: '';
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent #d83c3c transparent;
+    top: 4px;
+    left: -6px;
+}
+ 
+.form-wrapper button:hover:before{
+    border-right-color: #e54040;
+}
+ 
+.form-wrapper button:focus:before,
+.form-wrapper button:active:before{
+        border-right-color: #c42f2f;
+}      
+ 
+.form-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+    border: 0;
+    padding: 0;
+}    
+
+
+
+
+/*
+.myButton {
+	background-color:#6b6b6b;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:902px;
+	display:block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdan;
+	font-size:12px;
+        position:right;
+	padding:11px 6px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+margin-left:26%;
+margin-right:26%;
+text-align: center;
+opacity: 0.6;
+}
+
+.myButton:hover {
+	background-color:#919191;
+}
+.myButton:active {
+	position:relative;
+	top:4px;
+}
+*/
+
+
+.myButton {
+	background-color:#8B8989;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:902px;
+	display:block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdan;
+	font-size:12px;
+    position:fixed;
+	padding:6px 17px;
+	
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+bottom:2%;
+right:1%;
+text-align: center;
+opacity: 0.6;
+-moz-transition: background-color 0.5s 0.1s ease;
+-o-transition: background-color 0.5s 0.1s ease;
+-webkit-transition: background-color 0.5s 0.1s ease;
+
+}
+
+.myButton:hover {
+	background-color:#A52A2A;
+	
+}
+.myButton:active {
+	position:fixed;
+    bottom:2.5%;
+}
+
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-position: inside;
+    font: 14px 'Oswald', sans-serif;
+    padding: 10px;
+}
+
+.top-menu li {
+    display: inline-block;
+    padding: 9px 12px;
+    float:left;
+}
+
+.top-menu li.active {
+    background: #29c5e6;
+    color: #fff;
+}
+
+.top-menu a {
+    color: #BEBEBE;
+}
+
+.top-menu a:hover {
+    color: #D3D3D3; /* Цвет ссылки при наведении на нее курсора мыши */  
+    text-decoration: none; /* Добавляем подчеркивание */
+text-shadow: 0 0 10px red;
+   }

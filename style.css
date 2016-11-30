@@ -1,0 +1,314 @@
+html {
+min-width:100%;
+
+}
+body {
+
+}
+.col2 { max-width: 1100px;min-width: 700px;}
+
+
+a.a {
+    color: #A52A2A; /* Цвет обычной ссылки */ 
+
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+   }
+   a.a:visited {
+    color: #A52A2A; /* Цвет посещённой ссылки */
+
+   } 
+   a.a:hover {
+    color: #000000; /* Цвет ссылки при наведении на нее курсора мыши */  
+    text-decoration: none; /* Добавляем подчеркивание */
+text-shadow: 0 0 50px black; 
+   }
+
+
+a.a1 {
+    color: #BEBEBE; /* Цвет обычной ссылки */ 
+
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+   }
+   a.a1:visited {
+    color: #BEBEBE; /* Цвет посещённой ссылки */
+
+   } 
+   a.a1:hover {
+    color: #D3D3D3; /* Цвет ссылки при наведении на нее курсора мыши */  
+    text-decoration: none; /* Добавляем подчеркивание */
+text-shadow: 0 0 10px red;
+   }
+
+
+.Box {
+    margin-bottom:10%;
+
+        width: 57%;
+        height: 200px;
+        background-color: #ffffff;
+        position:relative;
+        border: 2px solid #D4D4D4;
+        border-radius: 2px;
+        box-shadow: 0 0 15px #A9A9A9;
+        padding:20px 40px;
+	
+}
+
+.Box1 {    
+        width: 57%;
+        height: 200px;
+        background-color: #ffffff;
+        position:relative;
+        border: 2px solid #D4D4D4;
+        border-radius: 2px;
+        box-shadow: 0 0 15px #A9A9A9;
+        padding:20px 40px;
+
+}
+
+.text {
+ font-family: Brushstroke, fantasy;
+color: #000000;
+        text-decoration: none;
+}
+
+
+.Box:hover {
+ 
+        width:57%;
+        height: 200px;
+        background-color: #ffffff;
+        position:relative;
+        border: 2px solid #D4D4D4;
+        border-radius: 2px;
+        box-shadow: 0 0 45px #A9A9A9;
+        padding:20px 40px;
+        text-decoration: none;
+
+}
+
+.Box:active {
+
+        width:57%;
+        height: 200px;
+        background-color: #ffffff;
+        position:relative;
+        border: 2px solid #D4D4D4;
+        border-radius: 2px;
+        box-shadow: 0 0 45px #A9A9A9;
+        padding:20px 40px;
+        text-decoration: none;
+
+}
+
+.Box1:hover {
+ 
+        width:57%;
+        height: 200px;
+        background-color: #ffffff;
+        position:relative;
+        border: 2px solid #D4D4D4;
+        border-radius: 2px;
+        box-shadow: 0 0 45px #A9A9A9;
+        padding:20px 40px;
+        text-decoration: none;
+}
+
+.Box1:active {
+
+        width:57%;
+        height: 200px;
+        background-color: #ffffff;
+        position:relative;
+        border: 2px solid #D4D4D4;
+        border-radius: 2px;
+        box-shadow: 0 0 45px #A9A9A9;
+        padding:20px 40px;
+        text-decoration: none;
+}
+
+ .effect-2 {
+-webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+}
+
+.Boxstr {
+        width: 90%;
+        height: 100%;
+        background-color: #ffffff;
+        position:left;
+        border: 2px solid #D4D4D4;
+        border-radius: 2px;
+        box-shadow: 0 0 15px #A9A9A9;
+        padding:20px 40px;
+
+}
+
+
+.text {
+ font-family: Century Gothic;
+color: #000000;
+        text-decoration: none;
+}
+
+.line-1 { 
+  width:100%;  
+  border-top: 1px solid #BEBEBE; 
+  border-bottom: 1px solid #fff; 
+  height: 0px; 
+}
+
+html {
+    overflow-y: scroll;
+}
+
+
+.cf:before, .cf:after{
+    content:"";
+    display:table;
+}
+ 
+.cf:after{
+    clear:both;
+}
+ 
+.cf{
+    zoom:1;
+}  
+
+/* Form wrapper styling */
+.form-wrapper {
+    width: 220px;
+    
+}
+ 
+/* Form text input */
+ 
+.form-wrapper input {
+    width: 150px;
+    height: 1px;
+    padding: 10px 5px;
+    float: left;    
+    font: bold 13px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    border: 0;
+    background: #eee;
+    border-radius: 3px 0 0 3px;    
+     
+}
+ 
+.form-wrapper input:focus {
+    outline: 0;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+ 
+.form-wrapper input::-webkit-input-placeholder {
+   color: #999;
+   font-weight: normal;
+   font-style: italic;
+
+}
+ 
+.form-wrapper input:-moz-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+
+}
+ 
+.form-wrapper input:-ms-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+
+}    
+ 
+/* Form submit button */
+.form-wrapper button {
+    overflow: visible;
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 21px;
+    width: 60px;
+    font: bold 10px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    color: #fff;
+    text-transform: uppercase;
+    background: #d83c3c;
+    border-radius: 0 3px 3px 0;      
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+}   
+   
+.form-wrapper button:hover{     
+    background: #e54040;
+}   
+   
+.form-wrapper button:active,
+.form-wrapper button:focus{   
+    background: #c42f2f;
+    outline: 0;   
+}
+ 
+.form-wrapper button:before { /* left arrow */
+    content: '';
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent #d83c3c transparent;
+    top: 4px;
+    left: -6px;
+}
+ 
+.form-wrapper button:hover:before{
+    border-right-color: #e54040;
+}
+ 
+.form-wrapper button:focus:before,
+.form-wrapper button:active:before{
+        border-right-color: #c42f2f;
+}      
+ 
+.form-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+    border: 0;
+    padding: 0;
+}    
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-position: inside;
+    font: 14px 'Oswald', sans-serif;
+    padding: 10px;
+}
+
+.top-menu li {
+    display: inline-block;
+    padding: 9px 12px;
+    float:left;
+}
+
+.top-menu li.active {
+    background: #29c5e6;
+    color: #fff;
+}
+
+.top-menu a {
+    color: #BEBEBE;
+}
+
+.top-menu a:hover {
+    color: #D3D3D3; /* Цвет ссылки при наведении на нее курсора мыши */  
+    text-decoration: none; /* Добавляем подчеркивание */
+text-shadow: 0 0 10px red;
+   }
+
